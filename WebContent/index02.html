@@ -2,35 +2,97 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Agenda</title>
+		<title> Agenda </title>
+		<style>
+			table {
+				margin: 0px;
+				padding: 8px;
+			}
+			table thead tr th, table tbody tr td {
+				min-width: 200px;
+				padding: 4px 0px;
+			}
+			table thead tr {
+				background: black;
+				color: white;
+				margin: 0px;
+				padding: 0px;
+			}
+			table tbody tr:nth-child(even) {
+				background: #DDD;
+			}
+			table tbody tr:hover {
+				background: #FFFFA9;
+			}
+			.dados {
+				display: block;
+				margin: 0px 0px 0px 10px;
+				width: 400px;
+			}
+			.dados h3 {
+				border-bottom: 1.5px solid black;
+				display: block;
+				margin: 0px 0px 5px;;
+				padding: 0px 0px 5px;
+				width: 100%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			.dados > div > span {
+				color: gray;
+				float: right;
+				font-style: italic;
+			}
+			.clear {
+				clear: both;
+				margin: 25px 0px;
+				padding: 0px;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Agenda Telefônica</h1>
-		<p><b>Ana Paula Porto</b></p>
-		<p>(11) 94535-6828</p>
-		<p><b>Diogo Macedo</b></p>
-		<p>(11) 96461-8977</p>
-		<p><b>Regina Marques</b></p>
-		<p>(11) 95900-0028</p>
-		
+
+		<div class="dados">
+			<h3>Agenda Telefônica</h3>
+			<div>
+				Ana Paula Porto
+				<span>(11) 94535-6828</span>
+			</div>
+			<div>
+				Diogo Macedo
+				<span>(11) 96461-8977</span>
+			</div>
+			<div>
+				Regina Marques
+				<span>(11) 95900-0028</span>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
 		<table>
-			<colgroup>
-    			<col span="1" style="background-color:blue">
-    			<col style="background-color:yellow">
-  			</colgroup>
-			<h1>Agenda Telefônica</h1>
-			<tr>
-				<th>Ana Paula Porto</th>
-				<th>(11) 94535-6828</th>
-			</tr>
-			<tr>
-				<th>Diogo Macedo</th>
-				<th>(11) 96461-8977</th>
-			</tr>
-			<tr>
-				<th>Regina Marques</th>
-				<th>(11) 95900-0028</th>
-			</tr>
+			<caption>Agenda Telefônica</caption>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Telefone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ana Paula Porto</td>
+					<td>(11) 94535-6828</td>
+				</tr>
+				<tr>
+					<td>Diogo Macedo</td>
+					<td>(11) 96461-8977</td>
+				</tr>
+				<tr>
+					<td>Regina Marques</td>
+					<td>(11) 95900-0028</td>
+				</tr>
+			</tbody>
 		</table>
+
 	</body>
 </html>
